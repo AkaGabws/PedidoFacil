@@ -1,0 +1,589 @@
+{
+  "database": "pedidofacil",
+  "collections": {
+    "users": [
+      {
+        "_id": {
+          "$oid": "507f1f77bcf86cd799439011"
+        },
+        "nome": "João Silva",
+        "email": "admin@pedidofacil.com",
+        "senha": "$2a$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj4J/HS.iK2O",
+        "role": "admin",
+        "ativo": true,
+        "ultimoLogin": {
+          "$date": "2024-01-15T10:30:00.000Z"
+        },
+        "createdAt": {
+          "$date": "2024-01-01T00:00:00.000Z"
+        },
+        "updatedAt": {
+          "$date": "2024-01-15T10:30:00.000Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "507f1f77bcf86cd799439012"
+        },
+        "nome": "Maria Santos",
+        "email": "gerente@pedidofacil.com",
+        "senha": "$2a$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj4J/HS.iK2O",
+        "role": "gerente",
+        "ativo": true,
+        "ultimoLogin": {
+          "$date": "2024-01-15T09:15:00.000Z"
+        },
+        "createdAt": {
+          "$date": "2024-01-01T00:00:00.000Z"
+        },
+        "updatedAt": {
+          "$date": "2024-01-15T09:15:00.000Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "507f1f77bcf86cd799439013"
+        },
+        "nome": "Pedro Oliveira",
+        "email": "operador@pedidofacil.com",
+        "senha": "$2a$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj4J/HS.iK2O",
+        "role": "operador",
+        "ativo": true,
+        "ultimoLogin": {
+          "$date": "2024-01-15T08:45:00.000Z"
+        },
+        "createdAt": {
+          "$date": "2024-01-01T00:00:00.000Z"
+        },
+        "updatedAt": {
+          "$date": "2024-01-15T08:45:00.000Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "507f1f77bcf86cd799439014"
+        },
+        "nome": "Ana Costa",
+        "email": "ana.costa@pedidofacil.com",
+        "senha": "$2a$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj4J/HS.iK2O",
+        "role": "operador",
+        "ativo": true,
+        "ultimoLogin": {
+          "$date": "2024-01-14T16:20:00.000Z"
+        },
+        "createdAt": {
+          "$date": "2024-01-01T00:00:00.000Z"
+        },
+        "updatedAt": {
+          "$date": "2024-01-14T16:20:00.000Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "507f1f77bcf86cd799439015"
+        },
+        "nome": "Carlos Ferreira",
+        "email": "carlos.ferreira@pedidofacil.com",
+        "senha": "$2a$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj4J/HS.iK2O",
+        "role": "gerente",
+        "ativo": true,
+        "ultimoLogin": {
+          "$date": "2024-01-14T14:30:00.000Z"
+        },
+        "createdAt": {
+          "$date": "2024-01-01T00:00:00.000Z"
+        },
+        "updatedAt": {
+          "$date": "2024-01-14T14:30:00.000Z"
+        }
+      }
+    ],
+    "orders": [
+      {
+        "_id": {
+          "$oid": "507f1f77bcf86cd799439021"
+        },
+        "client": "Empresa ABC Ltda",
+        "quantidade": 100,
+        "produto": "Notebook Dell Inspiron 15",
+        "valorUnitario": 2850.00,
+        "valorTotal": 285000.00,
+        "prazo": {
+          "$date": "2024-01-22T00:00:00.000Z"
+        },
+        "status": "pendente",
+        "observacoes": "Pedido urgente - Cliente VIP",
+        "criadoPor": {
+          "$oid": "507f1f77bcf86cd799439011"
+        },
+        "createdAt": {
+          "$date": "2024-01-15T10:00:00.000Z"
+        },
+        "updatedAt": {
+          "$date": "2024-01-15T10:00:00.000Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "507f1f77bcf86cd799439022"
+        },
+        "client": "Comércio XYZ",
+        "quantidade": 50,
+        "produto": "Mouse Wireless Logitech",
+        "valorUnitario": 89.90,
+        "valorTotal": 4495.00,
+        "prazo": {
+          "$date": "2024-01-29T00:00:00.000Z"
+        },
+        "status": "em_producao",
+        "observacoes": "Entrega na sede - Embalagem especial",
+        "criadoPor": {
+          "$oid": "507f1f77bcf86cd799439012"
+        },
+        "createdAt": {
+          "$date": "2024-01-14T14:30:00.000Z"
+        },
+        "updatedAt": {
+          "$date": "2024-01-15T09:00:00.000Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "507f1f77bcf86cd799439023"
+        },
+        "client": "Distribuidora 123",
+        "quantidade": 200,
+        "produto": "Teclado Mecânico RGB",
+        "valorUnitario": 299.90,
+        "valorTotal": 59980.00,
+        "prazo": {
+          "$date": "2024-01-20T00:00:00.000Z"
+        },
+        "status": "pronto",
+        "observacoes": "Produto com embalagem especial",
+        "criadoPor": {
+          "$oid": "507f1f77bcf86cd799439011"
+        },
+        "createdAt": {
+          "$date": "2024-01-13T16:00:00.000Z"
+        },
+        "updatedAt": {
+          "$date": "2024-01-15T08:30:00.000Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "507f1f77bcf86cd799439024"
+        },
+        "client": "Loja Virtual Tech",
+        "quantidade": 75,
+        "produto": "Monitor LG 24\" Full HD",
+        "valorUnitario": 599.90,
+        "valorTotal": 44992.50,
+        "prazo": {
+          "$date": "2024-01-25T00:00:00.000Z"
+        },
+        "status": "pendente",
+        "observacoes": "Entrega em horário comercial",
+        "criadoPor": {
+          "$oid": "507f1f77bcf86cd799439013"
+        },
+        "createdAt": {
+          "$date": "2024-01-15T11:00:00.000Z"
+        },
+        "updatedAt": {
+          "$date": "2024-01-15T11:00:00.000Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "507f1f77bcf86cd799439025"
+        },
+        "client": "Escritório Moderno",
+        "quantidade": 30,
+        "produto": "Impressora HP LaserJet",
+        "valorUnitario": 1299.90,
+        "valorTotal": 38997.00,
+        "prazo": {
+          "$date": "2024-01-18T00:00:00.000Z"
+        },
+        "status": "entregue",
+        "observacoes": "Instalação incluída",
+        "criadoPor": {
+          "$oid": "507f1f77bcf86cd799439012"
+        },
+        "createdAt": {
+          "$date": "2024-01-12T09:00:00.000Z"
+        },
+        "updatedAt": {
+          "$date": "2024-01-15T07:00:00.000Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "507f1f77bcf86cd799439026"
+        },
+        "client": "Startup Inovação",
+        "quantidade": 25,
+        "produto": "Webcam HD 1080p",
+        "valorUnitario": 159.90,
+        "valorTotal": 3997.50,
+        "prazo": {
+          "$date": "2024-01-27T00:00:00.000Z"
+        },
+        "status": "em_producao",
+        "observacoes": "Produto para home office",
+        "criadoPor": {
+          "$oid": "507f1f77bcf86cd799439014"
+        },
+        "createdAt": {
+          "$date": "2024-01-14T15:30:00.000Z"
+        },
+        "updatedAt": {
+          "$date": "2024-01-15T10:15:00.000Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "507f1f77bcf86cd799439027"
+        },
+        "client": "Escola Municipal",
+        "quantidade": 150,
+        "produto": "Tablet Samsung Galaxy Tab A",
+        "valorUnitario": 899.90,
+        "valorTotal": 134985.00,
+        "prazo": {
+          "$date": "2024-02-04T00:00:00.000Z"
+        },
+        "status": "pendente",
+        "observacoes": "Projeto educacional",
+        "criadoPor": {
+          "$oid": "507f1f77bcf86cd799439015"
+        },
+        "createdAt": {
+          "$date": "2024-01-15T13:00:00.000Z"
+        },
+        "updatedAt": {
+          "$date": "2024-01-15T13:00:00.000Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "507f1f77bcf86cd799439028"
+        },
+        "client": "Hospital São Lucas",
+        "quantidade": 40,
+        "produto": "Scanner de Código de Barras",
+        "valorUnitario": 450.00,
+        "valorTotal": 18000.00,
+        "prazo": {
+          "$date": "2024-01-23T00:00:00.000Z"
+        },
+        "status": "cancelado",
+        "observacoes": "Cancelado pelo cliente",
+        "criadoPor": {
+          "$oid": "507f1f77bcf86cd799439011"
+        },
+        "createdAt": {
+          "$date": "2024-01-14T10:00:00.000Z"
+        },
+        "updatedAt": {
+          "$date": "2024-01-15T12:00:00.000Z"
+        }
+      }
+    ],
+    "invoices": [
+      {
+        "_id": {
+          "$oid": "507f1f77bcf86cd799439031"
+        },
+        "numero": "NF001",
+        "serie": "001",
+        "tipo": "saida",
+        "dataEmissao": {
+          "$date": "2024-01-15T10:30:00.000Z"
+        },
+        "dataVencimento": {
+          "$date": "2024-02-14T00:00:00.000Z"
+        },
+        "cliente": {
+          "nome": "Empresa ABC Ltda",
+          "cnpj": "12.345.678/0001-90",
+          "endereco": {
+            "logradouro": "Rua das Flores",
+            "numero": "123",
+            "bairro": "Centro",
+            "cidade": "São Paulo",
+            "estado": "SP",
+            "cep": "01234-567"
+          }
+        },
+        "itens": [
+          {
+            "produto": "Notebook Dell Inspiron 15",
+            "quantidade": 100,
+            "valorUnitario": 2850.00,
+            "valorTotal": 285000.00
+          }
+        ],
+        "subtotal": 285000.00,
+        "impostos": {
+          "icms": 28500.00,
+          "pis": 1852.50,
+          "cofins": 8550.00
+        },
+        "total": 323902.50,
+        "status": "emitida",
+        "pedido": {
+          "$oid": "507f1f77bcf86cd799439021"
+        },
+        "emitidoPor": {
+          "$oid": "507f1f77bcf86cd799439011"
+        },
+        "createdAt": {
+          "$date": "2024-01-15T10:30:00.000Z"
+        },
+        "updatedAt": {
+          "$date": "2024-01-15T10:30:00.000Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "507f1f77bcf86cd799439032"
+        },
+        "numero": "NF002",
+        "serie": "001",
+        "tipo": "saida",
+        "dataEmissao": {
+          "$date": "2024-01-14T14:30:00.000Z"
+        },
+        "dataVencimento": {
+          "$date": "2024-02-09T00:00:00.000Z"
+        },
+        "cliente": {
+          "nome": "Comércio XYZ",
+          "cnpj": "98.765.432/0001-10",
+          "endereco": {
+            "logradouro": "Avenida Principal",
+            "numero": "456",
+            "bairro": "Jardim América",
+            "cidade": "Rio de Janeiro",
+            "estado": "RJ",
+            "cep": "20000-000"
+          }
+        },
+        "itens": [
+          {
+            "produto": "Mouse Wireless Logitech",
+            "quantidade": 50,
+            "valorUnitario": 89.90,
+            "valorTotal": 4495.00
+          }
+        ],
+        "subtotal": 4495.00,
+        "impostos": {
+          "icms": 449.50,
+          "pis": 29.22,
+          "cofins": 134.85
+        },
+        "total": 5108.57,
+        "status": "paga",
+        "pedido": {
+          "$oid": "507f1f77bcf86cd799439022"
+        },
+        "emitidoPor": {
+          "$oid": "507f1f77bcf86cd799439012"
+        },
+        "createdAt": {
+          "$date": "2024-01-14T14:30:00.000Z"
+        },
+        "updatedAt": {
+          "$date": "2024-01-15T09:00:00.000Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "507f1f77bcf86cd799439033"
+        },
+        "numero": "NF003",
+        "serie": "001",
+        "tipo": "saida",
+        "dataVencimento": {
+          "$date": "2024-01-30T00:00:00.000Z"
+        },
+        "cliente": {
+          "nome": "Distribuidora 123",
+          "cnpj": "11.222.333/0001-44",
+          "endereco": {
+            "logradouro": "Rua do Comércio",
+            "numero": "789",
+            "bairro": "Centro Empresarial",
+            "cidade": "Belo Horizonte",
+            "estado": "MG",
+            "cep": "30000-000"
+          }
+        },
+        "itens": [
+          {
+            "produto": "Teclado Mecânico RGB",
+            "quantidade": 200,
+            "valorUnitario": 299.90,
+            "valorTotal": 59980.00
+          }
+        ],
+        "subtotal": 59980.00,
+        "impostos": {
+          "icms": 5998.00,
+          "pis": 389.87,
+          "cofins": 1799.40
+        },
+        "total": 68167.27,
+        "status": "rascunho",
+        "pedido": {
+          "$oid": "507f1f77bcf86cd799439023"
+        },
+        "emitidoPor": {
+          "$oid": "507f1f77bcf86cd799439011"
+        },
+        "createdAt": {
+          "$date": "2024-01-15T08:30:00.000Z"
+        },
+        "updatedAt": {
+          "$date": "2024-01-15T08:30:00.000Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "507f1f77bcf86cd799439034"
+        },
+        "numero": "NF004",
+        "serie": "001",
+        "tipo": "saida",
+        "dataEmissao": {
+          "$date": "2024-01-15T11:30:00.000Z"
+        },
+        "dataVencimento": {
+          "$date": "2024-02-19T00:00:00.000Z"
+        },
+        "cliente": {
+          "nome": "Loja Virtual Tech",
+          "cnpj": "55.666.777/0001-88",
+          "endereco": {
+            "logradouro": "Avenida Digital",
+            "numero": "321",
+            "bairro": "Tech Park",
+            "cidade": "Curitiba",
+            "estado": "PR",
+            "cep": "80000-000"
+          }
+        },
+        "itens": [
+          {
+            "produto": "Monitor LG 24\" Full HD",
+            "quantidade": 75,
+            "valorUnitario": 599.90,
+            "valorTotal": 44992.50
+          }
+        ],
+        "subtotal": 44992.50,
+        "impostos": {
+          "icms": 4499.25,
+          "pis": 292.45,
+          "cofins": 1349.78
+        },
+        "total": 51133.98,
+        "status": "emitida",
+        "pedido": {
+          "$oid": "507f1f77bcf86cd799439024"
+        },
+        "emitidoPor": {
+          "$oid": "507f1f77bcf86cd799439013"
+        },
+        "createdAt": {
+          "$date": "2024-01-15T11:30:00.000Z"
+        },
+        "updatedAt": {
+          "$date": "2024-01-15T11:30:00.000Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "507f1f77bcf86cd799439035"
+        },
+        "numero": "NF005",
+        "serie": "001",
+        "tipo": "saida",
+        "dataEmissao": {
+          "$date": "2024-01-12T09:30:00.000Z"
+        },
+        "dataVencimento": {
+          "$date": "2024-01-10T00:00:00.000Z"
+        },
+        "cliente": {
+          "nome": "Escritório Moderno",
+          "cnpj": "99.888.777/0001-66",
+          "endereco": {
+            "logradouro": "Rua dos Escritórios",
+            "numero": "555",
+            "bairro": "Centro Empresarial",
+            "cidade": "Salvador",
+            "estado": "BA",
+            "cep": "40000-000"
+          }
+        },
+        "itens": [
+          {
+            "produto": "Impressora HP LaserJet",
+            "quantidade": 30,
+            "valorUnitario": 1299.90,
+            "valorTotal": 38997.00
+          }
+        ],
+        "subtotal": 38997.00,
+        "impostos": {
+          "icms": 3899.70,
+          "pis": 253.48,
+          "cofins": 1169.91
+        },
+        "total": 44320.09,
+        "status": "emitida",
+        "pedido": {
+          "$oid": "507f1f77bcf86cd799439025"
+        },
+        "emitidoPor": {
+          "$oid": "507f1f77bcf86cd799439012"
+        },
+        "createdAt": {
+          "$date": "2024-01-12T09:30:00.000Z"
+        },
+        "updatedAt": {
+          "$date": "2024-01-12T09:30:00.000Z"
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "createdAt": "2024-01-15T15:00:00.000Z",
+    "version": "1.0.0",
+    "description": "Dados de demonstração do sistema PedidoFácil",
+    "totalRecords": {
+      "users": 5,
+      "orders": 8,
+      "invoices": 5
+    },
+    "credentials": {
+      "admin": {
+        "email": "admin@pedidofacil.com",
+        "senha": "admin123"
+      },
+      "gerente": {
+        "email": "gerente@pedidofacil.com",
+        "senha": "gerente123"
+      },
+      "operador": {
+        "email": "operador@pedidofacil.com",
+        "senha": "operador123"
+      }
+    }
+  }
+} 
